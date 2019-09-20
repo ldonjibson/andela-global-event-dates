@@ -5,45 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
   <title>Global Dates</title>
+  <style>
+    ul{
+      max-height: 600px;
+      overflow: auto;
+    }
+  </style>
 </head>
-<body>
-  <div class="container">
-    <h1 class="text-center"> Gloabal Holidays App</h1>
-    <form>
-      <div class="form-group">
-        <label for="country">Country</label>
-        <input type="text" class="form-control" id="countryinput" aria-describedby="country" placeholder="Country">
-        <small id="country" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="year">Year</label>
-        <input type="number" class="form-control" id="year" placeholder="Year">
-      </div>
-      <div class="form-group">
-        <label for="month">Month</label>
-        <input type="number" class="form-control" id="month" placeholder="Year">
-      </div>
-      <div class="form-group">
-        <label for="month">Day</label>
-        <input type="number" class="form-control" id="day" placeholder="Year">
-      </div>
-      <div class="form-group">
-        <label for="type">Type of Holiday</label>
-        <select type="type" class="form-control" id="Holidaytype">
-          <option value="national">National</option>
-          <option value="local">Local</option>
-          <option value="religious">Religious</option>
-          <option value="observance">Observance</option>
-        </select>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary btn-large btn-block">Fetch Holidays</button>
-      </div>
-    </form>
-  </div>
-  <div id="root" class="container">
+<body class="padding">
+  <div class="container h-100">
+    <div id="root"></div>
   </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
